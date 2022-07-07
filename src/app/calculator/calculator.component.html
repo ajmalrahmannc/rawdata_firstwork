@@ -1,0 +1,43 @@
+<h4><u>[ 2 ans ]</u></h4>
+<div class="frame">
+    <h1>CALCULATOR</h1>
+    <div class="border">
+        <!-- <input type="text" name="text" id="result"> -->
+        <div class="maindisplay">
+            <div class="subdisplay">{{ subDisplayText }}</div>
+            {{ mainDisplayText }}
+          </div>
+        <div class="keypad">
+            <div class="first_raw">
+                <button (click)="clearBox()" class="cbtn">C</button>
+                <button class="operator" (click)="displayNum('/')">/</button>
+            </div>
+
+            <div class="secound_raw">
+                <button (click)="displayNum('7')">7</button>
+                <button (click)="displayNum('8')">8</button>
+                <button (click)="displayNum('9')">9</button>
+                <button class="operator" (click)="displayNum('x')">x</button>
+            </div>
+
+            <div class="third_raw">
+                <button (click)="displayNum('4')">4</button>
+                <button (click)="displayNum('5')">5</button>
+                <button (click)="displayNum('6')">6</button>
+                <button class="operator" (click)="displayNum('-')">-</button>
+            </div>
+
+            <div class="forth_raw">
+                <button (click)="displayNum('1')">1</button>
+                <button (click)="displayNum('2')">2</button>
+                <button (click)="displayNum('3')">3</button>
+                <button class="operator" (click)="displayNum('+')">+</button>
+            </div>
+
+            <div class="fifth_raw">
+                <button (click)="displayNum('0')" class="zerobtn">0</button>
+                <button (click)="displayNum('.')">.</button>
+                <button class="operator" (click)="evaluateExpression()">=</button>
+            </div>
+        </div>
+    </div>

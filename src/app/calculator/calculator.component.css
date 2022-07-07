@@ -1,0 +1,73 @@
+h1{
+    text-align: left;
+}
+
+.frame{
+    text-align: center;
+}
+.operator{
+    background-color: rgb(255, 115, 0);
+    color: #0A1172;
+}
+.border{
+    background-color: grey;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.maindisplay {
+    background: lightgrey;
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 4rem;
+    text-align: right;
+    font-family: Courier, monospace;
+    overflow: auto;
+}
+
+
+.subdisplay {
+    border-bottom: 1px solid black;
+    height: 25%;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+.keypad{
+    padding-bottom: 20px;
+}
+
+.first_raw,
+.secound_raw,
+.third_raw,
+.forth_raw,
+.fifth_raw{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+button{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 2px;
+    animation: none;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: #0A1172;
+}
+
+.cbtn{
+    width: 130px;
+    background-color: rgb(236, 49, 43);
+}
+.delbtn{
+    background-color: orange;
+}
+.zerobtn{
+    width: 85px;
+}
